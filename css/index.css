@@ -1,0 +1,607 @@
+.content-fir,.content-sec{display:inline-block;}
+.animatedTime,.animatedTime-2{-webkit-animation-fill-mode:both}
+/*高度都是占100%*/
+html, body {
+  position: relative;
+  height: 100%
+}
+body{
+  background: #eee;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 0.14rem;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide{
+	position: relative;
+  font-size: 0.18rem;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.outwarp{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 98;
+  height: 100%;
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backgroundwarp, .innerwarp{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:99;
+	height:100%;
+	width:100%;
+	background-position:top;
+	background-repeat: no-repeat;
+}
+.innerwarp{opacity:0}
+.innerwarp img{
+   width: 100%;
+   height: 400px;
+}
+.audio,.backgroundwarp,.innerwarp{
+	background-size:contain;
+	background-repeat:no-repeat
+}
+.audio,.pub-passdown{
+	z-index:101;
+	position:absolute;
+}
+/*音乐按钮是绝对定位在页面右方*/
+.audio{
+	right:20px;
+	top:7%;
+	width:30px;
+	height:30px;
+	background-image:url(../images/normalmusic.svg);
+}
+/*向上箭头在中间*/
+.pub-passdown{
+	left:50%
+}
+/*宽度为14px做成的线条，阴影*/
+.pub1,.pub2{
+	width:14px;
+	height:2px;
+	border-radius:2px;
+	position:absolute;
+	background-color:#fff;
+	box-shadow:1px -1px 1px #646464;
+}
+/*每条线都旋转*/
+.pub-passdown .pub1{
+	-webkit-transform:rotate(-50deg);
+	transform:rotate(-50deg);
+	left:-10px
+}
+.pub-passdown .pub2{
+	left:-2px;
+	-webkit-transform:rotate(50deg);
+	transform:rotate(50deg)
+}
+/*第二页文字区域*/
+.content-contain{
+	color:rgba(252,252,252,0.6);
+	top:60%;width:100%;
+	position:absolute;
+	text-align:center;
+	z-index: 100;
+}
+.content-contain2{
+	color:rgba(252,252,252,0.6);
+	top:50%;width:100%;
+	position:absolute;
+	text-align:center;
+	z-index: 100;
+}
+.bg2{
+	width: 200px;
+	height: 200px;
+}
+/*第一行文字*/
+.content-fir{
+	font-size:0.25rem;
+}
+/*第二行文字*/
+.content-sec{
+	font-size:0.26rem;
+}
+.peiban{
+	background-image: url(../images/0801.jpg);
+	background-size: cover;
+}
+.topImage{
+	height:100px;
+	margin:20% auto 0;
+	display:block;
+	opacity:0;
+	-webkit-transform:scale(1.5,1.5);
+	transform:scale(1.5,1.5);
+}
+/*@keyframes peiban {
+	from{
+		opacity:0;
+		-webkit-transform:scale(1.5,1.5);
+		transform:scale(1.5,1.5)
+	}
+	to{
+		opacity: 1;
+	    -webkit-transform: scale(.8,.8)!important;
+	    transform: scale(.8,.8)!important;
+	}
+}*/
+.swiper-slide-active .topImage-active {
+	width: 100%;
+	opacity: 1;
+	-webkit-transform: scale(.8,.8)!important;
+	transform: scale(.8,.8)!important;
+	-webkit-transition-property: -webkit-transform opacity;
+	transition-property: -webkit-transform opacity;
+	transition-property: transform opacity;
+	transition-property: transform opacity,-webkit-transform opacity;
+	-webkit-transition-duration: 2s,4s;
+	transition-duration: 2s,4s;
+	-webkit-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+	-webkit-transition-delay: 0;
+	transition-delay: 0
+}
+
+.centerImage {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 70%;
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -50px;
+	opacity: 0
+}
+/*========把爱带回家在正中间========*/
+.firpage-text-contain {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	z-index: 100;
+}
+/*文字设置*/
+.firpage-text {
+	color: rgba(255,255,255,.9);
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	opacity: 0
+}
+
+
+.swiper-slide-active .fadeInDown-0 {
+	-webkit-animation-name: fadeInDown-0;
+	animation-name: fadeInDown-0
+}
+
+.swiper-slide-active .fadeInDown-40 {
+	-webkit-animation-name: fadeInDown-40;
+	animation-name: fadeInDown-40
+}
+/*淡入淡出+缩放效果，把爱带回家*/
+.swiper-slide-active .fadeInScale {
+	-webkit-animation-name: fadeInScale;
+	animation-name: fadeInScale
+}
+
+.swiper-slide-active .fadeInScaleDown {
+	-webkit-animation-name: fadeInScaleDown;
+	animation-name: fadeInScaleDown
+}
+
+.swiper-slide-active .flipInX {
+	-webkit-animation-name: flipInX;
+	animation-name: flipInX
+}
+/*半张图设置延迟1s*/
+.animatedTime {
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	animation-fill-mode: both;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+/*背景图设置延迟1.5s*/
+.animatedTime-2 {
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	animation-fill-mode: both;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s
+}
+
+.animatedTime-3,.animatedTime-4 {
+	-webkit-animation-duration: 2s;/*动画完成一个周期所花费的时间*/
+	-webkit-animation-fill-mode: both; /*动画遵循 forwards 和 backwards 的规则。动画会在两个方向上扩展动画属性。*/
+}
+/*把字延迟1s*/
+.animatedTime-3 {
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+/*爱字延迟2s*/
+.animatedTime-4 {
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+	-webkit-animation-timing-function: ease-in-out;/*动画的速度曲线：慢速开始和结束*/
+	animation-timing-function: ease-in-out;
+}
+/*带回家，三个字时间都是2s*/
+.animatedTime-5,.animatedTime-6 {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+}
+/*带字，延迟4s*/
+.animatedTime-5 {
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	-webkit-animation-delay: 4s;
+	animation-delay: 4s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}
+/*回家，延迟5s*/
+.animatedTime-6 {
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	-webkit-animation-delay: 5s;
+	animation-delay: 5s;
+}
+
+.animatedTime-01 {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+/*音乐按钮旋转动画设置，相同的速度开始到播放linear，循环设置infinite*/
+.rotate {
+	-webkit-animation: rotating 1.2s linear infinite;
+	animation: rotating 2s linear infinite
+}
+/*向上指示箭头动画设置，循环设置*/
+.flageUp {
+	-webkit-animation: flageUp 1.2s linear infinite;
+	animation: flageUp 1.2s linear infinite
+}
+/*缩放动画设置*/
+.swiper-slide-active .scale {
+	-webkit-animation-name: scale;
+	animation-name: scale;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+}
+/*淡入淡出设置*/
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.xingfu{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	font-size: 30px;
+	color: #fff;
+	z-index: 101;
+}
+.xingfu span{
+	display: inline-block;
+	margin-left: 10px;
+}
+/*=====音乐按钮旋转动画，从0度到360度，一圈=====*/
+@-webkit-keyframes rotating {
+	from {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg)
+	}
+}
+
+@keyframes rotating {
+	from {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg)
+	}
+}
+/*========第一张中秋背景图缩放动画，x，y从1.5倍到1倍=======*/
+@-webkit-keyframes scale {
+	from {
+		-webkit-transform: scale(1.5,1.5);
+		transform: scale(1.5,1.5)
+	}
+
+	to {
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1)
+	}
+}
+
+@keyframes scale {
+	from {
+		-webkit-transform: scale(1.5,1.5);
+		transform: scale(1.5,1.5)
+	}
+
+	to {
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1)
+	}
+}
+/*==============淡入淡出效果，透明度从0到1===========*/
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}
+/*===========向上箭头动画设置，透明度从有到无，距离底部的距离=========*/
+@-webkit-keyframes flageUp {
+	from {
+		opacity: .5;
+		bottom: 6%
+	}
+
+	50% {
+		bottom: 4.2%
+	}
+
+	to {
+		opacity: 0;
+		bottom: 6%
+	}
+}
+
+@keyframes flageUp {
+	from {
+		opacity: .5;
+		bottom: 6%
+	}
+
+	50% {
+		bottom: 4.2%
+	}
+
+	to {
+		opacity: 0;
+		bottom: 6%
+	}
+}
+/*==============淡入淡出+y轴向下平移==============*/
+@-webkit-keyframes fadeInDown-40 {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0,-100%,0);
+		transform: translate3d(0,-100%,0)/*平移（x轴，y轴，z轴）*/
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0,20%,0);
+		transform: translate3d(0,20%,0)
+	}
+}
+
+@keyframes fadeInDown-40 {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0,-100%,0);
+		transform: translate3d(0,-100%,0)
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0,20%,0);
+		transform: translate3d(0,20%,0)
+	}
+}
+/*=====淡入淡出+缩放，动画设置，透明度+scale*/
+@-webkit-keyframes fadeInScale {
+	from {
+		opacity: 0;
+		-webkit-transform: scale(1.7,1.7);
+		transform: scale(1.7,1.7)
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1)
+	}
+}
+
+@keyframes fadeInScale {
+	from {
+		opacity: 0;
+		-webkit-transform: scale(1.7,1.7);
+		transform: scale(1.7,1.7)
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1)
+	}
+}
+/*========淡入淡出+位置不变=========*/
+@-webkit-keyframes fadeInDown-0 {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0,-100%,0);
+		transform: translate3d(0,-100%,0)
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none
+	}
+}
+
+@keyframes fadeInDown-0 {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0,-100%,0);
+		transform: translate3d(0,-100%,0)
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none
+	}
+}
+/*==========缩放+y轴向下平移==========*/
+@-webkit-keyframes fadeInScaleDown {
+	from {
+		opacity: 0;
+		-webkit-transform: scale(1.7,1.7);
+		transform: scale(1.7,1.7)
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+		-webkit-transform: translate3d(0,40%,0);
+		transform: translate3d(0,40%,0)
+	}
+}
+
+@keyframes fadeInScaleDown {
+	from {
+		opacity: 0;
+		-webkit-transform: scale(1.7,1.7);
+		transform: scale(1.7,1.7)
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+		-webkit-transform: translate3d(0,40%,0);
+		transform: translate3d(0,40%,0)
+	}
+}
+
+@-webkit-keyframes flipInX {
+	from {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,90deg);
+		transform: perspective(400px) rotate3d(1,0,0,90deg);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+		opacity: 0
+	}
+
+	40% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,-40deg);
+		transform: perspective(400px) rotate3d(1,0,0,-40deg);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in
+	}
+
+	60% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,20deg);
+		transform: perspective(400px) rotate3d(1,0,0,20deg);
+		opacity: 1
+	}
+
+	80% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,-10deg);
+		transform: perspective(400px) rotate3d(1,0,0,-10deg)
+	}
+
+	to {
+		-webkit-transform: perspective(400px);
+		transform: perspective(400px);
+		opacity: 1
+	}
+}
+
+@keyframes flipInX {
+	from {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,90deg);
+		transform: perspective(400px) rotate3d(1,0,0,90deg);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+		opacity: 0
+	}
+
+	40% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,-40deg);
+		transform: perspective(400px) rotate3d(1,0,0,-40deg);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in
+	}
+
+	60% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,20deg);
+		transform: perspective(400px) rotate3d(1,0,0,20deg);
+		opacity: 1
+	}
+
+	80% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,-10deg);
+		transform: perspective(400px) rotate3d(1,0,0,-10deg)
+	}
+
+	to {
+		-webkit-transform: perspective(400px);
+		transform: perspective(400px);
+		opacity: 1
+	}
+}
+
+
+

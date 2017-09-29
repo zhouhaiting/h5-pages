@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>中秋国庆-把爱带回家</title>
+	<script>   
+		(function (doc, win) {
+		        var docEl = doc.documentElement,
+		            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		            recalc = function () {
+		                var clientWidth = docEl.clientWidth;
+		                if (!clientWidth) return;
+		                if(clientWidth>=640){
+		                    docEl.style.fontSize = '100px';
+		                }else{
+		                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+		                }
+		            };
+
+		        if (!doc.addEventListener) return;
+		        win.addEventListener(resizeEvt, recalc, false);
+		        doc.addEventListener('DOMContentLoaded', recalc, false);
+		    })(document, window);
+    </script>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <!--第一页-->
+	        <div class="swiper-slide">
+	         <div style="background-image:url(images/0101.png);" class="ani innerwarp fadeIn animatedTime"></div>
+	         <div style="background-image:url(images/zhongqiu1.jpg);" class="ani outwarp scale"></div>
+	          <div class="firpage-text-contain" style="position:relative;">
+	            <img src="images/0103.png" alt="" style=" position: absolute;top: -20px;left: 40%;width: 40px;opacity: 0;" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+	            <img src="images/0104.png" alt="" style="position: absolute;bottom: -20px;right: 35%;width: 40px;opacity:0;" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+	            <p style="font-size:42px;margin-left:15px;" class="firpage-text fadeInScale animatedTime-3">把</p>
+	            <p style="font-size:22px;margin-right:15px;" class="firpage-text fadeInScale animatedTime-4">爱</p>
+	            <p style="font-size:32px;margin-left:15px;" class="firpage-text fadeInScale animatedTime-5">带</p>
+	            <p style="font-size:22px;margin-right:15px;" class="firpage-text fadeInScale animatedTime-6">回</p>
+	            <p style="font-size:42px;margin-left:15px;" class="firpage-text fadeInScale animatedTime-6">家</p>
+	          </div>
+	        </div>
+	        <!--第二页-->
+	        <div class="swiper-slide">
+		        <div class="ani innerwarp fadeIn animatedTime"><!--吃饭图-->
+		        	<img class="ani bg2" src="images/1.png" swiper-animate-effect="rollIn" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+		        </div>
+                <!--背景图-->
+	            <div style="background-image:url(images/bg3.jpg);" class="outwarp scale animatedTime-2"></div>
+
+	            <div class="content-contain"> <!--描述文字绝对定位-->
+		            <!-- <div class="content-col"> -->
+		              <p class="content-fir fadeInScale animatedTime-3">时间都去哪了</p><!--淡入淡出+缩放效果，延迟1s-->
+		              <p class="content-sec fadeInDown-40 animatedTime-4">还没好好看看你眼睛就花了</p> <!--淡入淡出+y轴向下平移，延迟2s-->
+		           <!--  </div> -->
+
+		           <!--  <div class="content-col"> -->
+		              <p class="content-fir fadeInDown-0 animatedTime-5">柴米油盐半辈子</p><!--延迟4s-->
+		              <p class="content-sec fadeInScaleDown animatedTime-6">转眼就只剩下满脸的皱纹了</p><!--y轴向下平移，延迟5s-->
+		            <!-- </div> -->
+	            </div>
+	        </div>
+	        <!--第三页-->
+	        <div class="swiper-slide">
+	            <div class="ani innerwarp fadeIn animatedTime"><!--半张图-->
+		        	<img class="ani bg2" src="images/0301.png" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+		        </div>
+                <!--背景图-->
+	            <div style="background-image:url(images/0302.jpg);" class="outwarp scale animatedTime-2"></div>
+	            <div class="content-contain">
+		            <div class="content-col">
+		              <p class="content-fir ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="2s" swiper-animate-delay="1s">每一年，都说要, <span class="content-sec ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="2s" swiper-animate-delay="2s">多陪陪父母</span></p> 
+		            </div>
+
+		            <div class="content-col">
+		              <p class="content-fir ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="2s" swiper-animate-delay="3s">每一年，都说要换个, <span class="content-sec ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="2s" swiper-animate-delay="4s">离家近的工作</span></p>  
+		            </div>
+		           
+		              <p class="content-fir fadeInScale animatedTime-5">可是，<span>每一年</span></p>  
+		     
+		          
+		              <p class="content-sec fadeInDown-0 animatedTime-6">我们都<span>不曾</span><span>兑换</span><span>我们的诺言</span></p>
+		          
+	            </div>  
+	        </div><!--第三页结束-->
+	        <!--第四页-->
+	        <div class="swiper-slide">
+	          <div class="ani innerwarp fadeIn animatedTime"><!--半张图-->
+		        	<img class="ani bg2" src="images/0401.png" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+		        </div>
+                <!--背景图-->
+	            <div style="background-image:url(images/0402.jpg);" class="outwarp scale animatedTime-2"></div>
+	          <div class="content-contain">
+	            <div class="content-col">
+	              <p class="content-fir ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="2s" swiper-animate-delay="1s">因为想</p>
+	              <p class="content-sec ani fadeInDown-40" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="2s" swiper-animate-delay="2s">衣锦还乡</p>
+	            </div>
+
+	            <div class="content-col">
+	              <p class="content-fir ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="2s" swiper-animate-delay="3s">所以才</p>
+	              <p class="content-sec ani fadeInDown-40" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="2s" swiper-animate-delay="4s">背井离乡</p>
+	            </div>
+	          </div>
+	        </div>
+	        <!--第五页-->
+	        <div class="swiper-slide">
+	        	<div class="ani innerwarp fadeIn animatedTime"><!--半张图-->
+		        	<img class="ani bg2" src="images/0601.png" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+		        </div>
+                <!--背景图-->
+	            <div style="background-image:url(images/0602.jpg);" class="outwarp scale animatedTime-2"></div>
+	            <div class="content-contain">
+		            <div class="content-col">
+		              <p class="content-fir ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="1s">就这样</p>
+		              <p class="content-sec ani fadeInDown-40" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="3s">年复一年</p>
+		            </div>
+
+		            <div class="content-col">
+		              <p class="content-fir ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="4s">我们依然忙着</p>
+		              <p class="content-sec ani fadeInDown-40" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="6s">在外打拼挣钱</p>
+		            </div>
+		        </div>
+	        </div>
+	        <!--第6页-->
+	        <div class="swiper-slide">
+	        	<div style="background-image: url(images/0701.jpg);background-size:cover;" class="backgroundwarp"></div>
+	        </div>
+	        <!--第7页-->
+	        <div class="swiper-slide">
+	        	<div class="backgroundwarp peiban">	<!--背景图片-->        		 
+	        	</div>
+	        	<div class="content-contain2"> <!--描述文字绝对定位top：50%-->
+	        		<img src="images/0803.png" alt="" class="topImage topImage-active">
+		        	<div style="margin:0 auto;text-align:center;">
+			            <p style="text-align: center;color:rgba(255, 255, 255, .8);display:inline-block;opacity: 0;font-size: 18px;" class="fadeInDown-0 animatedTime-4">是最长情的</p>
+			            <p style="text-align: center;color:rgba(255, 255, 255, .8);font-size: 24px;display:inline-block;opacity: 0;" class="fadeInDown-0 animatedTime-5">告白！</p> <!--位置y轴从负数变正常-->
+		            </div>
+	        	</div>  	
+	        </div>
+	        <!--第8页-->
+	        <div class="swiper-slide">
+	        	<div style="background-image: url(images/bg4.jpg);background-size:cover;" class="ani backgroundwarp scale">	
+	        	</div>
+	        	<p class="xingfu fadeInScale animatedTime-3">幸<span class="fadeInScale animatedTime-4">福</span class="fadeInScale animatedTime-5"><span class="fadeInScale animatedTime-5">安</span><span class="fadeInScale animatedTime-6">康！</span></p>
+	        </div>
+	    </div>
+	    <!-- audio，音频 -->
+	    <div class="rotate audio">
+	      <audio src="audio/001.mp3" id="media"  loop preload></audio>
+	    </div>
+	    <!-- up flage 向上指示三角-->
+	    <div class="pub-passdown flageUp">
+	      <div class="pub1"></div>
+	      <div class="pub2"></div>
+	    </div>
+    </div>
+
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+    	var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'vertical',
+		    loop: true,
+		    
+		    
+		    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+			    swiperAnimateCache(swiper); //隐藏动画元素 
+			    swiperAnimate(swiper); //初始化完成开始动画
+			  }, 
+			  onSlideChangeEnd: function(swiper){ 
+			    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			  } 
+		  })        
+    </script>
+	
+</body>
+</html>
