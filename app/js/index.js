@@ -36,6 +36,6 @@
                removeClass(autiobtn, 'rotate');
             }
         }
-    }
+    };
 
 })();

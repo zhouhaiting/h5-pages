@@ -1,0 +1,37 @@
+{
+  "name": "sample-project-gulp",
+  "version": "1.0.0",
+  "description": "The sample project we will use throughout the Gulp chapters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frontend-tooling/sample-project-gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frontend-tooling/sample-project-gulp/issues"
+  },
+  "homepage": "https://github.com/frontend-tooling/sample-project-gulp",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "git://github.com/gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jshint": "^1.9.4",
+    "gulp-jslint": "^0.2.2",
+    "gulp-less": "^3.0.2",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-uglify": "^1.1.0"
+  },
+  "dependencies": {
+    "jshint": "^2.9.2"
+  }
+}
