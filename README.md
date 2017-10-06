@@ -19,5 +19,7 @@
 
 > 注意：pc端浏览，请使用chrome浏览器移动端调试模拟器
 
+### [在线demo点击浏览](http://zhouhaiting.org/pro/h5/index.html)
+
 
 
